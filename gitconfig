@@ -1,0 +1,29 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = redacted
+email = redacted
+[core]
+autocrlf = input
+excludesfile = ~/.gitignore_global
+[alias]
+st = status -sb
+ci = commit -v
+br = branch
+co = checkout
+ls = log --date=short --pretty=format:'%C(cyan)%h %C(red)%ad %C(blue)[%an]%C(magenta)%d %C(white)%s'
+diff = diff --color
+# DANGEROUS: run during a merge conflict to checkout "their" version of the files
+#accept-theirs = "!f() { git checkout --theirs -- \\\"${@:-.}\\\"; git add -u \\\"${@:-.}\\\"; }; f"
+[diff]
+tool = meld
+[apply]
+whitespace = strip
+[color]
+ui = true
+[rerere]
+enabled = 1
+[push]
+default = current
+[merge]
+tool = meld
