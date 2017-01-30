@@ -1,0 +1,13 @@
+autocomplete-python
+file-icons
+fountain
+gherkin-table-format
+git-plus
+git-time-machine
+language-gherkin
+linter
+linter-eslint
+linter-pycodestyle
+minimap
+python-tools
+react
