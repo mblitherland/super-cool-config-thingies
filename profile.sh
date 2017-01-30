@@ -1,3 +1,7 @@
+
+# set PATH so it includes user's private bin directories
+PATH="$HOME/bin:$HOME/.local/bin:$PATH:/usr/lib/chromium-browser/"
+
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
 parse_git_branch() {
