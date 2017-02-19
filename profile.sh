@@ -11,9 +11,10 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n$ 
 #export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n$ "
 # This is for running the engage back-end outside of docker
 export SQLALCHEMY_DATABASE_URI=redacted
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
+# Only for OSX
+#if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#  . $(brew --prefix)/etc/bash_completion
+#fi
 dcleanup(){
     docker rm -v $(docker ps --filter status=exited -q 2>/dev/null) 2>/dev/null
     docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
@@ -29,4 +30,6 @@ export AWS_ACCESS_KEY_ID=redacted
 export AWS_SECRET_ACCESS_KEY=redacted
 # for when I want to run the node stuff locally
 export NODE_ENV=development
+export ALTERCARE_OF_MENTOR_BAZMAN_ORG_ID=1
 
+export EDITOR=vim
