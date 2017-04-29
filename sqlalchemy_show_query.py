@@ -1,3 +1,4 @@
 from sqlalchemy.dialects import postgresql
-# q = somequery.do.the.thing()
-print str(q.statement.compile(dialect=postgresql.dialect()))
+# query = somequery.do.the.thing()
+print(str(query.statement.compile(dialect=postgresql.dialect())))
+# return query.all()

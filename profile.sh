@@ -28,5 +28,8 @@ dcleanup_for_real(){
 export AWS_ACCESS_KEY_ID=redacted
 export AWS_SECRET_ACCESS_KEY=redacted
 # for when I want to run the node stuff locally
+export ENGAGE_INTEGRATION_URL=localhost:50051
+export SETTINGS_SERVICE_URL=localhost:50052
+# I don't think this is necessary any longer
 export NODE_ENV=development
 
