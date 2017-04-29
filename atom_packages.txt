@@ -1,13 +1,23 @@
 autocomplete-python
+blame
+* busy-signal
 file-icons
-fountain
-gherkin-table-format
+! fountain
+# gherkin-table-format
 git-plus
 git-time-machine
+* intentions
 language-gherkin
-linter
+* linter
 linter-eslint
-linter-pycodestyle
+linter-flake8
+* linter-ui-default
 minimap
 python-tools
 react
+
+Note: Key from above
+*) These are installed (I believe) by other packages as dependencies
+!) Writing tools
+#) Doesn't work for me
+
