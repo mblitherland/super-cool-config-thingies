@@ -1,23 +1,22 @@
-autocomplete-python
 blame
-* busy-signal
 file-icons
-! fountain
-# gherkin-table-format
-git-plus
 git-time-machine
-* intentions
 language-gherkin
-* linter
+language-javascript-jsx
 linter-eslint
 linter-flake8
-* linter-ui-default
+markdown-pdf
 minimap
-python-tools
-react
+nuclide
+pretty-json
+
+! fountain
+# gherkin-table-format
+# gherkin-autocomplete
+* linter
 
 Note: Key from above
-*) These are installed (I believe) by other packages as dependencies
+*) The linters want this installed, but don't do it
 !) Writing tools
 #) Doesn't work for me
 
