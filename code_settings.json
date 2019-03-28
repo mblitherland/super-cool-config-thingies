@@ -1,0 +1,11 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "window.titleBarStyle": "custom",
+    "editor.fontLigatures": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "keyboard.dispatch": "keyCode"
+}

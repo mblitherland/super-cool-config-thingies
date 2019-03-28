@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "project"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "/home/me/.virtualenvs/project/bin/python",
+		"files.insertFinalNewline": true,
+		"files.trimFinalNewlines": true,
+		"files.trimTrailingWhitespace": true
+	}
+}
