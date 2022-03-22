@@ -50,3 +50,5 @@ if (empty($TMUX))
   endif
 endif
 
+colorscheme gruvbox
+
