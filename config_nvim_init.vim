@@ -1,5 +1,13 @@
 :set nocompatible
 
+# Since I will invariably forget how to install things, here is a brief overview.
+# 1) start with vim plug: https://github.com/junegunn/vim-plug
+# 2) make sure to add FiraCode nerdfonts, especially for NERDTree and powerline stuff
+# 3) a modern node is required for neoclide things
+# 4) I tried the nord scheme, but I didn't like it with the tmux nord scheme so I stuck with gruvbox
+
+# TODO: I like the gk/gj stuff for line wraps and I should script that here as a default for k/j
+
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
@@ -30,6 +38,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+" TODO: this isn't that great, I should fix it up a bit.
 " Start NERDTree. If a file is specified, move the cursor to its window.
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
