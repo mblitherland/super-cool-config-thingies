@@ -2,6 +2,7 @@
 
 # Since I will invariably forget how to install things, here is a brief overview.
 # This assumes nvim, but vim shouldn't be far off
+# 0) put this file in ~/.config/nvim/init.vim
 # 1) start with vim plug: https://github.com/junegunn/vim-plug
 # 2) make sure to add FiraCode nerdfonts, especially for NERDTree and powerline stuff
 # 3) a modern node is required for neoclide things
