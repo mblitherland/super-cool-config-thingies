@@ -27,12 +27,16 @@ Plug 'morhetz/gruvbox'
 " Nerdtree stuff
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'PhilRunninger/nerdtree-buffer-ops'
 
 " Buffer tabs
 Plug 'zefei/vim-wintabs'
 Plug 'zefei/vim-wintabs-powerline'
+
+" Finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Needs a newer node on Pi
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
