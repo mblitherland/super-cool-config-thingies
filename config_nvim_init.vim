@@ -70,5 +70,5 @@ endif
 
 colorscheme gruvbox
 
-# This maps ctrl-t,c to WintabsClose, which is like :bn, but doesn't cause it to exit
+"This maps ctrl-t,c to WintabsClose, which is like :bn, but doesn't cause it to exit
 map <C-T>c <Plug>(wintabs_close)
