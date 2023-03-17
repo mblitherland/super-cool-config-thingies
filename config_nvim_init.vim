@@ -35,11 +35,14 @@ Plug 'zefei/vim-wintabs'
 Plug 'zefei/vim-wintabs-powerline'
 
 " Finder
+" Also recommend installing ripgrep
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Needs a newer node on Pi
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" To use solargraph (ruby) with this, "gem install solargraph"
+" then :CocInstall coc-solargraph
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -70,5 +73,5 @@ endif
 
 colorscheme gruvbox
 
-"This maps ctrl-t,c to WintabsClose, which is like :bn, but doesn't cause it to exit
+" This maps ctrl-t,c to WintabsClose, which is like :bn, but doesn't cause it to exit
 map <C-T>c <Plug>(wintabs_close)
