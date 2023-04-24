@@ -1,5 +1,9 @@
 :set nocompatible
 
+" Note that I've been installing the latest neovim (0.9 from appimage)
+" and using LunarVim (lunarvim.org) as of this writing instead of
+" maintaining this.
+
 " Since I will invariably forget how to install things, here is a brief overview.
 " This assumes nvim, but vim shouldn't be far off
 " 0) put this file in ~/.config/nvim/init.vim
