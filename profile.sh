@@ -30,6 +30,10 @@ dcleanup_for_real(){
     # Delete all images
     docker rmi $(docker images -q)
 }
+dstopall(){
+    # Stop all running containers
+    docker stop $(docker ps --filter status=running -q 2>/dev/null) 2>/dev/null
+}
 
 # AWS information
 export AWS_ACCESS_KEY_ID=redacted
