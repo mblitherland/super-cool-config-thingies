@@ -37,10 +37,17 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
+lvim.builtin.telescope.pickers.find_files.layout_strategy = "horizontal"
+lvim.builtin.telescope.pickers.find_files.layout_config = {
+  height = 0.9,
+  width = 0.9,
+  prompt_position = "top",
+  preview_width = 0.55
+}
 lvim.builtin.telescope.pickers.live_grep.layout_strategy = "horizontal"
 lvim.builtin.telescope.pickers.live_grep.layout_config = {
-  height = 0.85,
-  width = 0.85,
+  height = 0.9,
+  width = 0.9,
   prompt_position = "top",
   preview_width = 0.55
 }
