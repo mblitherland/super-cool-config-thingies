@@ -6,6 +6,8 @@
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = false
+vim.opt.wrap = true
+vim.opt.linebreak = true
 
 -- Configuration for neovide
 vim.g.neovide_scale_factor = 0.5
@@ -71,7 +73,7 @@ lvim.lsp.installer.setup.automatic_installation = false
 
 -- ---configure a server manually. IMPORTANT: Requires `:LvimCacheReset` to take effect
 -- ---see the full default list `:lua =lvim.lsp.automatic_configuration.skipped_servers`
-vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "csharp_ls" })
+vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "omnisharp", "solargraph" })
 local opts = {} -- check the lspconfig documentation for a list of all possible options
 require("lvim.lsp.manager").setup("csharp_ls", opts)
 
@@ -80,6 +82,9 @@ require("lvim.lsp.manager").setup("csharp_ls", opts)
 lvim.lsp.automatic_configuration.skipped_servers = vim.tbl_filter(function(server)
   return server ~= "csharp_ls"
 end, lvim.lsp.automatic_configuration.skipped_servers)
+
+-- Intall rubocop
+require("lspconfig").rubocop.setup {}
 
 -- -- you can set a custom on_attach function that will be used for all the language servers
 -- -- See <https://github.com/neovim/nvim-lspconfig#keybindings-and-completion>
