@@ -1,3 +1,5 @@
+# I haven't used Atom in a long time, this list is probably worthless.
+
 blame
 file-icons
 git-time-machine
