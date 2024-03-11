@@ -11,9 +11,9 @@ if wezterm.config_builder then
 end
 
 -- This is where you actually apply your config choices
-
 config.audible_bell = 'Disabled'
 
+-- Only for Windows/WSL, obviously
 config.default_domain = 'WSL:Ubuntu'
 
 config.initial_cols = 132
