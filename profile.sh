@@ -15,4 +15,4 @@ dstopall(){
 }
 
 export EDITOR=nvim
-
+set -o vi
