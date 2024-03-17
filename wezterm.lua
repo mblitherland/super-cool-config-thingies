@@ -14,7 +14,7 @@ end
 config.audible_bell = 'Disabled'
 
 -- Only for Windows/WSL, obviously
-config.default_domain = 'WSL:Ubuntu'
+-- config.default_domain = 'WSL:Ubuntu'
 
 config.initial_cols = 132
 config.initial_rows = 36
