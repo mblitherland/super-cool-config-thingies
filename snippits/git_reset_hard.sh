@@ -1,0 +1,3 @@
+# I do this all the tie, yet I always forget it...
+git reset --hard origin/main
+
