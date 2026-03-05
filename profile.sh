@@ -16,3 +16,6 @@ dstopall(){
 
 export EDITOR=nvim
 set -o vi
+
+# Rust in asdf
+. "~/.asdf/installs/rust/1.90.0/env"
